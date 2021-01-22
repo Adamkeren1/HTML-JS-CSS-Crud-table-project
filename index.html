@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        HTML CRUD 
+    </title>
+    <h1> Flowlive Automation excersice </h1>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form method="post"  onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="fullName" id="Name" class = "newboarder">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="text" name="Email" id="Email">
+                    </div>
+                    <div>
+                        <label>Phone</label>
+                        <input type="text" name="Phone" id="Phone">
+                    </div>
+                  
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit" id="btnsubmit"  class="submit">
+                    </div>
+                    <div id="NameValidationError" class="hide">No empty fields allowed</div>
+                </form>
+                </td>
+          <td>
+              <table class="list" id="employeeList">
+                  <thead>
+                      <tr>
+                          <th>Name</th>
+                          <th>Email Address</th>
+                          <th>Phone</th>
+                          <th>Actions</th>
+                      </tr>
+                     
+                  </thead>
+                  <tbody>
+                      <tr id="row2">
+                          <td>John Doe</td>
+                          <td>johndoe@mail.com</td>
+                          <td>(171) 555-2222</td>
+                          <td>
+                              <button type="button">update</button>
+                              <button type="button" onClick="onDelete('row2')">delete</button>
+                          </td>
+                      </tr>
+                      <tr id="row3">
+                          <td>Peter Parker</td>
+                          <td>peterparker@mail.com</td>
+                          <td>(313) 555-9931</td>
+                          <td>
+                              <button type="button">update</button>
+                              <button type="button" onClick="onDelete('row3')">delete</button>
+                          </td>
+                      </tr>
+                      <tr id="row4">
+                          <td>Fran Wilson</td>
+                          <td>franwilson@mail.com</td>
+                          <td>(503) 555-9931</td>
+                          <td>
+                              <button type="button" onclick="onEdit(this)">update</button>
+                              <button type="button" onClick="onDelete('row4')">delete</button>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </td>
+            
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

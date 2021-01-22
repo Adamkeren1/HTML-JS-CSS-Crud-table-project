@@ -1,0 +1,44 @@
+body {
+    background-color: lightslategray;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: David;
+    font-size: 20px;
+}
+
+table {
+    font-family: David;
+    font-size: 20px;
+    text-align: center;
+    color: blue;
+}
+
+table, td {
+    border: 1px solid black;
+}
+table, th {
+    color: white;
+}
+
+input {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+#Name{
+
+}
+
+.newboarder{
+    border:double;
+}
+
